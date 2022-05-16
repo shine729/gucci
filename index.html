@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-title" content="구찌" />
+    <meta name="description" content="구찌 웹사이트" />
+    <title>GUCCI</title>
+    <link href="css/main_pc.css" rel="stylesheet" media="screen and (min-width : 850px)" />
+    <link href="css/main_mobile.css" rel="stylesheet" media="screen and (max-width : 850px)" />
+    <link href="css/navigation.css" rel="stylesheet" type="text/css"  />
+    <link href="css/slick.css" rel="stylesheet" type="text/css" />
+    <link href="css/web-font.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/slick.js" ></script>    
+  </head>
+  <script>
+     $(document).ready(function(){
+      $('#story').slick({
+      centerMode: true,
+      centerPadding: '40px',
+      slidesToShow: 5,
+      autoPlay:true,
+      responsive: [
+
+  {
+    centerMode: true,
+    breakpoint: 851,
+    settings: {
+      arrows: false,
+      centerPadding: '100px',
+      slidesToShow:1
+    }
+  },
+  {
+    centerMode: true,
+    breakpoint: 480,
+    settings: {
+      arrows: false,
+      centerPadding: '100px',
+      slidesToShow:1
+    }
+  }
+  ]
+
+  });
+
+ });
+  </script>
+  <body>
+    <div class="wrapper">
+      <a href="#section1" id="skip-nav">본문 바로가기</a>
+      <header id="header">
+        <div id="logo">
+          <h1><a  href="#"><span class="blind">GUCCI</span></a></h1>
+        </div>
+        <nav id="gnb">
+          <ul id="mainnav">
+            <li class="sub" data-menu="WHAT'S NEW">
+              <a href="#">WHAT'S NEW</a>
+                <ul>
+                  <li><a href="#">NEW</a></li>
+                  <li><a href="#" >패션쇼보기</a></li>
+                  <li><a href="#">구찌에디트</a></li>
+                </ul>
+            </li>
+            <li class="sub" data-menu="WOMAN">
+              <a href="#">WOMAN</a>
+                <ul>
+                  <li><a href="#">신상품</a></li>
+                  <li><a href="#">핸드백</a></li>
+                  <li><a href="#">지갑</a></li>
+                  <li><a href="#">의류</a></li>
+                  <li><a href="#">여성슈즈</a></li>
+                </ul>
+            </li>
+            <li class="sub" data-menu="MAN">
+              <a href="#">MAN</a>
+                <ul>
+                  <li><a href="#">신상품</a></li>
+                  <li><a href="#">남성가방</a></li>
+                  <li><a href="#">지갑</a></li>
+                  <li><a href="#">의류</a></li>
+                  <li><a href="#">남성슈즈</a></li>
+                </ul>
+            </li>
+            <li class="sub" data-menu="JEWELERY">
+              <a href="#">JEWELERY</a>
+                <ul>
+                  <li><a href="#">골드주얼리</a></li>
+                  <li><a href="#">실버주얼리</a></li>
+                  <li><a href="#">패션주얼리</a></li>
+                  <li><a href="#">시계</a></li>
+                </ul>
+            </li>
+            <li class="sub" data-menu=BEAUTY>
+              <a href="#">BEAUTY</a>
+                <ul>
+                  <li><a href="#">메이크업</a></li>
+                  <li><a href="#">여성향수</a></li>
+                  <li><a href="#">남성향수</a></li>
+                </ul>
+            </li>
+            <li class="sub" data-menu=DECO>
+              <a href="#">DECO</a>
+                <ul>
+                  <li><a href="#">데코</a></li>
+                </ul>
+            </li>
+            <li class="sub" data-menu=INSIDE>
+                <a href="#">INSIDE GUCCI</a>
+                <ul>
+                  <li><a href="#">GUCCI GARDEN</a></li>
+                  <li><a href="#">COMMITMENT</a></li>
+                  <li><a href="#">모두보기</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+        <button id="menuview"><span class="blind">메뉴펼치기</span></button>
+        <div id="m_menu">
+          <ul>
+            <li><a href="#">WHAT'S NEW</a></li>
+            <li><a href="#">WOMAN</a></li>
+            <li><a href="#">MAN</a></li>
+            <li><a href="#">JEWELERY</a></li>
+            <li><a href="#">BEAUTY</a></li>
+            <li><a href="#">DECO</a></li>
+            <li><a href="#">INSIDE GUCCI</a></li>
+          </ul>
+          <a href="#" class="close"><img src="img/m_close.png" alt="닫기"></a>
+        </div>
+      </header>  
+    </div>
+
+    <section id="section1">
+      <div id="section1_wrap">
+          <div id="band" class="pc"></div>
+          <div id="flower1" class="pc"><a><img src="img/flower.png" alt=""/></a></div>
+          <div id="flower2" class="pc"><a><img src="img/flower.png" alt=""/></a></div>
+          <div id="section1_main"><a><img src="img/img01.jpg" alt="toward the sun"/></a></div>
+      </div>
+      <div id=text>
+        <h2>TOWARD THE SUN</h2>
+        <span>KEN SCOTT IS A BRAND OF MANTERO</span>
+      </div>
+    </section>
+
+    <section id="section2" >
+      <h2>NEW PRODUCT</h2>
+      <ul id="itemcontainer" class="wrap clearfix">
+        <li class="box">
+          <a href="#" target="_blank">
+            <img src="img/bag1.png" alt="가방이미지">
+            <div class="project__description">
+              <img src="img/bag1.jpg" alt="사람이미지">
+              <p>[GG 마몽] 스몰 숄더백<br>₩1,660,000 </p>
+            </div>
+          </a>
+          <button class="favorite"><img src="img/favorite.png" alt="좋아요"/></button>
+        </li>
+
+        <li class="box">
+          <a href="#" target="_blank">
+            <img src="img/bag2.png" alt="가방이미지"> 
+            <div class="project__description">
+              <img src="img/bag2.jpg" alt="가방이미지">
+              <p>[GG 마몽]마틀라세 가죽 수퍼 미니 백<br>₩ 1,360,000</p>
+            </div>
+          </a>
+          <button class="favorite"><img src="img/favorite.png"  alt="좋아요"/></button>
+        </li>
+
+        <li class="box">
+          <a href="#" target="_blank">
+            <img src="img/bag3.png" alt="가방이미지">
+            <div class="project__description">
+              <img src="img/bag3.jpg" alt="가방이미지">
+              <p>[GG 마몽]마틀라세 가죽 수퍼 미니 백<br>₩ 1,360,000</p>
+            </div>
+          </a>
+          <button class="favorite"><img src="img/favorite.png"  alt="좋아요"/></button>
+        </li>
+
+        <li class="box">
+          <a href="#" target="_blank">
+            <img src="img/bag4.png" alt="가방이미지"> 
+            <div class="project__description">
+              <img src="img/bag4.jpg" alt="가방이미지">
+              <p>[GG 마몽]마틀라세 가죽 수퍼 미니 백<br>₩ 1,360,000</p>
+            </div>
+          </a>
+          <button class="favorite"><img src="img/favorite.png" alt="좋아요"/></button>
+        </li>
+
+        <li class="box">
+          <a href="#" target="_blank">
+            <img src="img/bag5.png" alt="가방이미지">
+            <div class="project__description">
+              <img src="img/bag5.jpg" alt="가방이미지">
+              <p>[GG 마몽]마틀라세 가죽 수퍼 미니 백<br>₩ 1,360,000</p>
+            </div>
+          </a>
+          <button class="favorite"><img src="img/favorite.png" alt="좋아요"/></button>
+        </li>
+
+        <li class="box">
+          <a href="#" target="_blank"> 
+            <img src="img/bag6.png" alt="가방이미지">
+            <div class="project__description">
+              <img src="img/bag6.jpg" alt="가방이미지">
+              <p>[GG 마몽] 미니 탑 핸들 백 <br>₩2,550,000</p>
+            </div>
+          </a>
+          <button class="favorite"><img src="img/favorite.png" alt="좋아요"/></button>
+        </li>
+      </ul>
+      <button id="b1">LOAD MORE</button>
+    </section>
+
+    <section id="section3">
+      <h2 class="blind">jewerly</h2>
+      <div class="wrap"> 
+          <div id="flower_jew" class="pc" ><img src="img/flower_jew.jpg" alt=""></div>
+          <div id="j-image"><img src="img/j-image.jpg" alt="리본브로치"></div>
+          <div id="p_wrap3">
+            <p>규칙에 얽메이지 않는 자유로움과 아름다움을 표현한<br>
+              에필로그 컬렉션을 지금 바로 만나보세요.</p>
+            <button>COLLECTION MORE</button>
+          </div>
+          <ul id="jewerly_wrap">
+            <li id="butter"><a href="#"><img src="img/jewerly_1.png" alt="나비브로치"></a></li>
+            <li id="broach"><a href="#"><img src="img/jewerly_2.png" alt="진주브로치"></a></li>
+            <li id="watch"><a href="#"><img src="img/jewerly_3.png" alt="시계"></a></li>
+            <li id="ring"><a href="#"><img src="img/jewerly_4.png" alt="반지"></a></li>
+            <li id="earring"><a href="#"><img src="img/ring.png" alt="귀걸이"></a></li>
+          </ul>
+      </div>
+    </section>
+    
+    <section id="section4">
+        <div class="box_wrap" >
+          <div id="woman"><img src="img/woman.png" alt="여성패션"></div>
+        </div>
+
+      <div id="p_wrap1">
+        <h2>Woman Fashion</h2> 
+        <p>
+          알레산드로 미켈레가 디자인한 여성 레디-투-웨어<br> 컬렉션에서 선보이는 실크
+          드레스, 럭셔리 트위드 앙상블  <br>액티브웨어의 조합
+        </p>
+        <button>view more</button>
+      </div>
+    </section>
+
+  <section id="section5">
+    <div class="box_wrap">
+      <div id="man"><img src="img/man.png" alt="남성패션"></div>
+    </div>
+    <div id="p_wrap2">
+      <h2>Man Fashion</h2>
+      <p>
+        알레산드로 미켈레가 디자인한 남성 레디-투-웨어<br> 컬렉션에서 선보이는
+        럭셔리 테일러드 수트, 울 코트 볼링 <br>셔츠데님 및 액티브웨어
+      </p>
+      <button>view more</button>
+    </div>
+  </section>
+
+  <section id="section6" >
+    <div>
+      <h2>에필로그 캠페인</h2>
+      <p>12시간의 라이브 스트리밍을 통해 제작 과정이 공개된 에필로그 캠페인을 만나보세요.</p>
+      <span>자세히 보기</span>
+    </div>
+  </section> 
+
+  <section id="section7">
+    <h2>G U C C I  S T O R Y S</h2>
+    <div id="story">
+      <div><img src="img/story1.jpg" alt="story1"></div>
+      <div><img src="img/story2.jpg" alt="story2"></div>
+      <div><img src="img/story3.jpg" alt="story3"></div>
+      <div><img src="img/story4.jpg" alt="story4"></div>
+      <div><img src="img/story5.jpg" alt="story5"></div>
+      <div><img src="img/story6.jpg" alt="story6"></div>
+      <div><img src="img/story7.jpg" alt="story7"></div>
+      <div><img src="img/story8.jpg" alt="story8"></div>
+      <div><img src="img/story9.jpg" alt="story9"></div>
+      <div><img src="img/story10.jpg" alt="story10"></div>
+    </div>
+  </section>
+  
+  <footer>
+    <div id="footer_wrapper">
+      <div id="footer_nav">
+        <ul class="footer_section">
+          <li><span class="foot_fir">특별한 서비스</span>
+            <ul class="foot_sub">
+              <li><a href="#">특별한 온라인 서비스</a></li>
+              <li><a href="#">구찌 선물포장 서비스</a></li>
+              <li><a href="#">무이자 할부 서비스 </a></li>
+              <li><a href="#">Gucci Osteria da Massimo Bottura</a></li>
+            </ul> 
+          </li>
+        </ul> 
+      
+        <ul class="footer_section">  
+          <li><span class="foot_fir">고객 문의</span>
+            <ul class="foot_sub">
+              <li><a href="#">클라이언트 서비스</a></li>
+              <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+              <li><a href="#">교환/환불 정책</a> </li>
+              <li><a href="#">쇼핑가이드</a> </li>
+            </ul>
+          </li>
+        </ul> 
+
+      
+        <ul class="footer_section"> 
+          <li><span class="foot_fir">기업 정보</span>
+            <ul class="foot_sub">
+              <li><a href="#">Gucci 정보</a></li>
+              <li><a href="#">Gucci Garden</a></li>
+              <li><a href="#">Gucci Equilibrium </a></li>
+              <li><a href="#">Code of Ethics </a></li>
+              <li><a href="#">Careers </a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+            </ul>
+          </li>
+        </ul> 
+
+
+        <ul class="footer_section">
+          <li><span class="foot_fir">구찌를 만나보세요</span>
+            <ul class="foot_sub">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Gucci</a></li>
+              <li><a href="#"> Gucci Beauty </a></li>
+              <li><a href="#">YouTube </a></li>
+              <li><a href="#">Twitter </a></li>
+              <li><a href="#"> Kakao Talk Channel</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="side_content">
+        <ul>
+          <li><span class="foot_fir">회사 소개</span>
+            <ul class="foot_sub">
+              <li><a href="#">매장찾기</a></li>
+              <li><a href="#">고객 서비스</a></li>
+            </ul>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </footer>
+  <script src="js/toggle.js"></script>
+  <script src="js/main.js" ></script>   
+</body >
+</html>
+

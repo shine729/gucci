@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>메일 폼 만들기</h1>
+    <form action="result.php" method="post">
+      이름(필수)
+      <input type="text" name="name" placeholder="홍길동" /> <br />
+      전화번호(필수)<input type="tel" value="010=" /> <br />
+      이메일<input type="tel" placeholder="hppy96@nver.com" /> <br />
+
+      <br />
+      <input type="radio" value="제휴 문의" />제휴 문의
+      <input type="radio" value="수출,수입문의" />수출,수입문의
+      <input type="radio" value="기타" />기타
+
+      <br />문의내용(필수)
+      <textarea placeholder="내용을 작성해 주세요"></textarea>
+
+      <input type="number" />
+      <input type="password" />
+      <input type="range" />
+      <input type="reset" />
+      <input type="search" />
+      <input type="time" />
+      <input type="url" />
+      <input type="week" />
+
+      <br />
+      <input type="checkbox" />빨강 <input type="checkbox" />파랑
+      <input type="date" />
+
+      <input type="submit" value="보내기" />
+    </form>
+  </body>
+</html>

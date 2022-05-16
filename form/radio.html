@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            display:block;
+            cursor:pointer;
+            font-size:20px;
+            margin-bottom:20px;
+            position: relative;
+        }
+
+        .container input{
+            /* border:1px solid red; */
+            opacity:0;
+
+        }
+
+        .checkmark{
+            border:1px solid red;
+            position:absolute;
+            width:25px;
+            height:25px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>체크박스 만들기</h1>
+    <label class="container">
+      <input type="radio" checked="checked" name="food" />
+      <span class="chexkmark"></span>
+      김밥
+    </label>
+    <label>
+        <label class="container">
+      <input type="radio"  name="food"/>
+      <span class="chexkmark"></span>
+      김치찌개
+    </label>
+    <label  class="container">
+        <input type="radio"  name="food"/>
+      <span class="chexkmark"></span>
+      된장찌개
+    </label>
+  </body>
+</html>
