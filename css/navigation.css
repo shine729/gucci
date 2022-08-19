@@ -141,6 +141,8 @@
     #menu_info>ul>li:nth-of-type(3){margin-right:15px;}
     #header #logo{width: 100px; height: 35px;}
     #header h1 a{width: 100px; height: 35px; background-size: 100px 35px;}
+    #menu_info>ul>li:nth-of-type(3){margin-right:10px;}
+    #menu_info>ul>li:nth-of-type(4) i{border:none; padding: 0;}
   }
 
   @media screen and (max-width: 1024px) {
@@ -148,12 +150,7 @@
     #m_menu > ul > li > a{color:#d16666; font-size: 20px; font-weight: bold;}
     #m_menu > ul > li {width:100%; text-align: center; margin-top: 50px;}
     #m_menu{position: relative; z-index: 10; padding-top: 50px; background:rgba(255, 255, 255, 0.95); height:100vh; cursor: pointer;}
-    #menuview{
-      display: block;
-      position: absolute;
-      top: 8px;
-      right:10px;
-      cursor: pointer;
+    #menuview{ display: block; position: absolute; top: 50%; transform: translateY(-50%); right:10px; cursor: pointer;
     }
     
     #menuview::before {
