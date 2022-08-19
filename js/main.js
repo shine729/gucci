@@ -6,9 +6,8 @@ $(window).on('scroll', function() {
     var scrollAmt = $(document).scrollTop();
     $(selector).each(function() {
       var $selector = $(this)
-      var minScroll = $selector.offset().top - $(window).height()-50;
-      var maxScroll = $selector.offset().top + $selector.outerHeight()-50;
-      console.log(minScroll + ' ~ ' + maxScroll + ' : ' + scrollAmt);
+      var minScroll = $selector.offset().top - $(window).height()-250;
+      var maxScroll = $selector.offset().top + $selector.outerHeight()-250;
       if (minScroll <= scrollAmt && scrollAmt < maxScroll) {
         $selector.addClass('show');
       } 
@@ -47,8 +46,6 @@ $(window).on('scroll', function() {
 
 
 
-
-  $(document).ready(function () {  
   $("#menuview").on("click", function () {
     $("#m_menu").css("display", "block");
   });
@@ -56,6 +53,14 @@ $(window).on('scroll', function() {
   $(".close").on("click", function () {
       $("#m_menu").css("display", "none");
     });
+
+  $('.footer_section .foot_fir').on("click", function () {
+    $(this).toggleClass('on');
+    if($('.footer_section .foot_fir').hasClass('on')){
+      $('.footer_section .foot_fir').removeClass('on');
+      $(this).toggleClass('on');
+    }
+  });
     
 
   window.onresize = function () {
@@ -63,6 +68,5 @@ $(window).on('scroll', function() {
           $("#m_menu").css("display", "none");
         } 
       };
-});
 
 

@@ -8,9 +8,11 @@
   box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.1); transition: height 0.3s; }
   #header {position: fixed; left: 0; top: 0; width: 100%; z-index: 1000; transition: all 0.3s; box-sizing: border-box; 
   background:black; height:50px;}
-  #header h1 { position: absolute;  width: 220px; top: 13px; left:10px;}
-  #header h1 a { background-image: url("../img/logo.png"); background-size: contain;
-  background-repeat: no-repeat; display: inline-block; width: 100px; }
+  #header #logo{position: absolute; top:50%; transform: translateY(-50%); left:15px; float:left;
+    width: 118px; height: 40px;}
+  #header h1 a { background-image: url("../img/logo.png"); background-size: 118px 40px;
+  background-repeat: no-repeat; display: inline-block; width: 118px;
+  height: 40px; float:left;}
   #gnb {position: absolute; left: 50%; margin-left: -383px; top: 0; font-size: 13px; color: #999999; overflow: hidden; height: 50px; 
   z-index: 100; transition: height 0.3s;}
   #gnb > ul > li {float: left; height: 300px; }
@@ -21,12 +23,19 @@
   #header.on #gnb {height: 300px;}
   #m_menu{display: none;}
   #m_menu a img{display:none;}
+  #menu_info{position: absolute; right:15px; top:50%; transform: translateY(-50%); height:50px; line-height: 50px;}
+  #menu_info>ul>li{float:left; margin-right:15px;}
+  #menu_info>ul>li i{font-size: 13px;}
+  #menu_info>ul>li>a{color:#888;}
+  #menu_info>ul>li:nth-of-type(3){margin-right:20px;}
+  #menu_info>ul>li:nth-of-type(4){margin-right: 0;}
+  #menu_info>ul>li:nth-of-type(4) i{border:2px solid #888; padding: 8px; border-radius: 50%; font-size: 15px;}
 
 
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 850px) {
     body {
       font-family: "NotoSansKR", "Noto Sans KR", "나눔고딕", "맑은 고딕",
         "malgun gothic", "돋움", "Dotum", "Apple SD Gothic Neo", "Helvetica",
@@ -127,20 +136,24 @@
 
     #m_menu a img{display:inline-block;}
     #m_menu .close{position: absolute; right:15px; top:15px; }
-
+    #menu_info{right:50px}
+    #menu_info>ul>li{margin-right:10px;}
+    #menu_info>ul>li:nth-of-type(3){margin-right:15px;}
+    #header #logo{width: 100px; height: 35px;}
+    #header h1 a{width: 100px; height: 35px; background-size: 100px 35px;}
   }
 
   @media screen and (max-width: 1024px) {
     #gnb { display:none;}
     #m_menu > ul > li > a{color:#d16666; font-size: 20px; font-weight: bold;}
     #m_menu > ul > li {width:100%; text-align: center; margin-top: 50px;}
-    #m_menu{padding-top: 50px; background:rgba(255, 255, 255, 0.95);
-      height:100vh;}
+    #m_menu{position: relative; z-index: 10; padding-top: 50px; background:rgba(255, 255, 255, 0.95); height:100vh; cursor: pointer;}
     #menuview{
       display: block;
       position: absolute;
       top: 8px;
       right:10px;
+      cursor: pointer;
     }
     
     #menuview::before {

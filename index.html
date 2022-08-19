@@ -11,6 +11,7 @@
     <link href="css/navigation.css" rel="stylesheet" type="text/css"  />
     <link href="css/slick.css" rel="stylesheet" type="text/css" />
     <link href="css/web-font.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/slick.js" ></script>    
   </head>
@@ -129,6 +130,14 @@
             <li><a href="#">INSIDE GUCCI</a></li>
           </ul>
           <a href="#" class="close"><img src="img/m_close.png" alt="닫기"></a>
+        </div>
+        <div id="menu_info">
+          <ul>
+            <li><a href="#"><i class="far fa-user"></i></a></li>
+            <li><a href="#"><i class="far fa-heart"></i></a></li>
+            <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+          </ul>
         </div>
       </header>  
     </div>
@@ -291,10 +300,10 @@
     </div>
   </section>
   
-  <footer>
+  <footer id="footer">
     <div id="footer_wrapper">
       <div id="footer_nav">
-        <ul class="footer_section">
+        <ul class="footer_section foot_sec1">
           <li><span class="foot_fir">특별한 서비스</span>
             <ul class="foot_sub">
               <li><a href="#">특별한 온라인 서비스</a></li>
@@ -345,16 +354,25 @@
           </li>
         </ul>
       </div>
-      <div id="side_content">
-        <ul>
-          <li><span class="foot_fir">회사 소개</span>
-            <ul class="foot_sub">
-              <li><a href="#">매장찾기</a></li>
-              <li><a href="#">고객 서비스</a></li>
-            </ul>
-          </li>
-        </ul> 
+      <div id="side_content" class="pc">
+        <span class="foot_fir">매장 찾기</span>
+        <div class="location">
+          <i class="fas fa-map-marker-alt lo_mark"></i>
+          <input type="text" placeholder="국가, 지역 또는 도시">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <!-- <ul class="foot_sub">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>  -->
       </div>
+      <p class="foot_info">
+        구찌 코리아 유한책임회사<br>
+        대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동, 아셈타워) / 사업자등록번호: 120-81-79834<br>
+        통신판매업 신고번호 제 2015-서울강남-00052 호 (사업자 정보 확인)<br>
+        개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting<br>
+        클라이언트서비스센터 02-3452-1921 메일 문의 clientservice.kr@gucci.com<br>
+      </p>
     </div>
   </footer>
   <script src="js/toggle.js"></script>

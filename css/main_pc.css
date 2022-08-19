@@ -60,14 +60,15 @@ position: relative;  }
 
 /* section2 */
 #section2 p { color: black;}
-#section2 { background-color: #f6f6f6; text-align: center;}
-#section2 h2 { /* border:2px solid red; */ padding-bottom: 50px; padding-top: 80px; text-align: center; font-size: 2.5rem;}
-#section2 #b1 { /* border: 2px solid red; */ background-color: black; width: 90px; height: 30px; margin-top: 30px; margin-bottom: 80px;
+#section2 { background-color: #f6f6f6; text-align: center; padding: 30px;}
+#section2 h2 { /* border:2px solid red; */ padding-bottom: 50px; padding-top: 50px; text-align: center; font-size: 2.5rem;}
+#section2 #b1 { /* border: 2px solid red; */ background-color: black; width: 120px; height: 35px; margin-top: 30px; margin-bottom: 80px;
 display: inline-block; color: white;}
 .box p { line-height: 24px; position: absolute; width: 100%; padding: 20px; text-align: center; bottom: 0; box-sizing: border-box;}
-.box { /* border: 2px solid red; */ width:80%; padding-top: 10%; padding-bottom: 15%; margin-left: 10%; margin-right: 10%; position: relative;
+.box { width:49%; float:left; padding-top: 150px; padding-bottom: 150px; position: relative;
   background-color: white; box-sizing: border-box; margin-bottom: 6%;}
-.box img {display: block; margin: 0 auto; width: 70%;}
+.box:nth-child(2n-1){margin-right:2%;}
+.box img {display: block; margin: 0 auto; width: auto;}
 .favorite { cursor: pointer; position: absolute; top: 15px; right: 15px; background-color: white; width: 30px; height: 30px; background-color: transparent;
   border: 0; outline: 0; z-index: 100;}
 .favorite img { width: 20px; height: 20px;}
@@ -146,62 +147,23 @@ button a {font-size: 0.9rem; padding-top: 5px;}
 
   
 /* footer */
-footer {background-color: black; position: relative; color: white; height: 380px;}
-#footer_nav { width: 66.6666666667%; box-sizing: border-box; font-size: 12px;}
-#footer_wrapper { max-width: 1200px; margin: 0 auto; line-height: 25px;}
-#side_content { width: 33.3333333333%; box-sizing: border-box; float: left; padding-top: 50px;}
-.footer_section { float: left; width: 25%; padding-left: 15px; padding-right: 15px; padding-bottom: 70px; padding-top: 50px; box-sizing: border-box;}
-.foot_fir{display:block; padding-bottom:10px; font-weight: bold; }
-#store_locator:before {position: absolute; content: ""; background-image: url("../img/locator.svg"); width: 5px; height: 5px;
+#footer {background-color: #1b1b1b; position: relative; color: white; height: 100%; clear: both;}
+#footer #footer_nav { width: 66.6666666667%; box-sizing: border-box; font-size: 12px;}
+#footer #footer_wrapper { max-width: 1200px; height:100%; margin: 0 auto; }
+#footer #side_content { width: 33.3333333333%; box-sizing: border-box; float: left; padding-top: 50px; line-height: 25px;}
+#footer .footer_section { float: left; width: 25%; padding-left: 15px; padding-right: 15px; padding-bottom: 70px; padding-top: 50px; 
+  box-sizing: border-box; line-height: 25px;}
+#footer .foot_fir{display:block; padding-bottom:30px; font-weight: bold; color:#888; font-size: 12px;}
+#footer #store_locator:before {position: absolute; content: ""; background-image: url("../img/locator.svg"); width: 5px; height: 5px;
   left: 0; /* top: -1px; */}
-footer { clear: both;}
+#footer .foot_info{clear: both; width:100%; font-size: 13px; padding-bottom: 20px; line-height: 20px; color:#999}
+#footer .location{background: #000; float:left; padding: 5px 10px; }
+#footer .location>input{background: #000; border:none; font-size: 12px; padding: 0; padding-left: 10px;}
+#footer .location>*{float:left; line-height: 25px;}
+#footer .location i::before{font-size: 10px;}
+#footer .location .lo_mark::before{color:#888;}
 
 
-
-@media screen and (min-width:850px) {
-
-
-  .box {
-    /* border: 2px solid red; */
-    float: left;
-    width: 40%;
-    margin-left: 7%;
-    margin-right: 7%;
-    position: relative;
-  }
-
-  #before_img {
-    width: 80%;
-  }
-
-  .box:nth-child(2n-1) {
-    /* border: 2px solid blue; */
-    margin-right: 6%;
-  }
-
-  .box:nth-child(2n) {
-    margin-left: 0%;
-  }
-
-  .p_wrap {
-    text-align: center;
-  }
-
-  #section2 #b1 {
-    width: 110px;
-    height: 35px;
-    line-height: 35px;
-  }
-
-  #section4 button,
-  #section5 button {
-    width: 75px;
-    height: 20px;
-  }
-
-
-
-}
 
 @media screen and (min-width: 1024px) {
 
