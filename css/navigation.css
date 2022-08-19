@@ -135,8 +135,6 @@
     }
 
     #m_menu a img{display:inline-block;}
-    #m_menu .close{position: absolute; right:15px; top:15px; }
-    #menu_info{right:50px}
     #menu_info>ul>li{margin-right:10px;}
     #menu_info>ul>li:nth-of-type(3){margin-right:15px;}
     #header #logo{width: 100px; height: 35px;}
@@ -171,6 +169,8 @@
       position: absolute;
   }
 
-  .close{display: block;}
+  #m_menu .close{position: absolute; right:15px; top:15px; display: block;}
+  #m_menu .close img{display: block;}
+  #menu_info{right:50px}
 
 }

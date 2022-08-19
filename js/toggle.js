@@ -1,4 +1,4 @@
-var fToggle = false;
+var fToggle = true;
 $(".favorite").on("click", function () {
   if (fToggle == false) {
     fToggle = true;
