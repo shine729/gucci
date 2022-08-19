@@ -59,15 +59,15 @@ position: relative;  }
 
 
 /* section2 */
-#section2 p { color: black;}
 #section2 { background-color: #f6f6f6; text-align: center; padding: 30px;}
+#section2 p { color: black; font-size: 15px;}
 #section2 h2 { /* border:2px solid red; */ padding-bottom: 50px; padding-top: 50px; text-align: center; font-size: 2.5rem;}
-#section2 #b1 { /* border: 2px solid red; */ background-color: black; width: 120px; height: 35px; margin-top: 30px; margin-bottom: 80px;
+#section2 #b1 { /* border: 2px solid red; */ background-color: black; width: 150px; height: 40px; margin-top: 30px; margin-bottom: 80px;
 display: inline-block; color: white;}
+.box { width:48%; float:left; padding-top: 150px; padding-bottom: 150px; position: relative;
+  background-color: white; box-sizing: border-box; margin-bottom: 5%;}
 .box p { line-height: 24px; position: absolute; width: 100%; padding: 20px; text-align: center; bottom: 0; box-sizing: border-box;}
-.box { width:49%; float:left; padding-top: 150px; padding-bottom: 150px; position: relative;
-  background-color: white; box-sizing: border-box; margin-bottom: 6%;}
-.box:nth-child(2n-1){margin-right:2%;}
+.box:nth-child(2n-1){margin-right:4%;}
 .box img {display: block; margin: 0 auto; width: auto;}
 .favorite { cursor: pointer; position: absolute; top: 15px; right: 15px; background-color: white; width: 30px; height: 30px; background-color: transparent;
   border: 0; outline: 0; z-index: 100;}
@@ -156,7 +156,7 @@ button a {font-size: 0.9rem; padding-top: 5px;}
 #footer .foot_fir{display:block; padding-bottom:30px; font-weight: bold; color:#888; font-size: 12px;}
 #footer #store_locator:before {position: absolute; content: ""; background-image: url("../img/locator.svg"); width: 5px; height: 5px;
   left: 0; /* top: -1px; */}
-#footer .foot_info{clear: both; width:100%; font-size: 13px; padding-bottom: 20px; line-height: 20px; color:#999}
+#footer .foot_info{clear: both; width:100%; font-size: 13px; padding:10px; padding-bottom: 20px; line-height: 20px; color:#999}
 #footer .location{background: #000; float:left; padding: 5px 10px; }
 #footer .location>input{background: #000; border:none; font-size: 12px; padding: 0; padding-left: 10px;}
 #footer .location>*{float:left; line-height: 25px;}
@@ -266,7 +266,7 @@ button a {font-size: 0.9rem; padding-top: 5px;}
 
   #section2 #b1 {
     width: 160px;
-    height: 40px;
+    height: 50px;
     line-height: 40px;
   }
 
